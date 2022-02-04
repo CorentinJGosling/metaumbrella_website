@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="CSSindex.css" />
+    <title>Home | metaumbrella</title>
+  </head>
+
+  <div class="navbar">
+    <!-- logo UPN -->
+    <div class="logo">
+      <a style="text-decoration: none; color: #fff" href="google.com"
+        ><i class="fas fa-home"></i>&nbsp; metaumbrella</a
+      >
+    </div>
+
+    <!-- menu -->
+    <!-- hamburger -->
+    <input type="checkbox" id="checkbox_toggle" />
+    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+    <!-- navbar -->
+    <div class="menu">
+      <div class="menu-item">
+        <a href="index.html" class="active">Home</a>
+      </div>
+      <div class="dropdown">
+        <a href="#TUTORIAL_SECTION" class="non_active">Tutorials</a>
+        <div class="dropdown-content drop_tuto">
+          <a href="tutorial1.html">1 - Format a dataset</a>
+          <a href="tutorial2.html">2 - Load a dataset</a>
+          <a href="tutorial3.html">3 - Structure of the data</a>
+          <a href="tutorial4.html">4 - Stratify the evidence</a>
+          <a href="tutorial5.html">5 - Interpret the results</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#EXAMPLE_SECTION" class="non_active">Examples</a>
+        <div class="dropdown-content drop_example">
+          <a href="example1.html">1 - Ioannidis criteria</a>
+          <a href="example2.html">2 - GRADE criteria</a>
+          <a href="example3.html">3 - Personalised criteria</a>
+        </div>
+      </div>
+      <div class="menu-item">
+        <a href="app.html" class="non_active">App</a>
+      </div>
+      <div class="menu-item">
+        <a href="#ABOUT_SECTION" class="non_active">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <body>
+    <!----------------------presentation area starts------------------------------->
+    <div class="contain_pres">
+      <div class="pres_left">
+        <img src="imagepres.svg" class="imgprs" />
+        <div class="pres_left_text">
+          <h1>
+            An app designed to perform umbrella reviews with stratification of
+            the evidence
+          </h1>
+          <h2>
+            More information on the R package on which this app is based can be
+            found in its dedicated
+            <a
+              href="https://cran.r-project.org/web//packages/metaumbrella/index.html"
+              target="_blank"
+              >CRAN</a
+            >
+            page or
+            <a href="https://github.com/cran/metaumbrella" target="_blank"
+              >github</a
+            >
+            page
+          </h2>
+          <div class="button">
+            <a href="https://github.com/cran/metaumbrella">Try the app</a>
+          </div>
+        </div>
+      </div>
+      <div class="pres_right">
+        <video class="video_in" controls muted src="recording.mp4"></video>
+      </div>
+    </div>
+
+    <!----------------------FAQ area starts------------------------------->
+    <div class="FAQ">
+      <div class="faq_title">Frequently Asked Questions</div>
+      <div class="FAQ_Q_A">
+        <div
+          class="FAQ_Q"
+          id="Question1_show"
+          onclick="document.getElementById('Question1_show').style.display='none'; document.getElementById('Question1_hide').style.display='block'; document.getElementById('Q1').style.display='block'"
+        >
+          What does the metaumbrella app do? &nbsp
+          <i class="fas fa-angle-down"></i>
+        </div>
+        <div
+          class="FAQ_Q"
+          style="display: none"
+          id="Question1_hide"
+          onclick="document.getElementById('Question1_show').style.display='block'; document.getElementById('Question1_hide').style.display='none'; document.getElementById('Q1').style.display='none'"
+        >
+          What does the metaumbrella app do? &nbsp
+          <i class="fas fa-angle-up"></i>
+        </div>
+        <div class="FAQ_A" id="Q1">
+          The metaumbrella app and its associated R package allow to perform
+          statistical analyses of an umbrella review easily and automatically
+        </div>
+      </div>
+
+      <div class="FAQ_Q_A">
+        <div
+          class="FAQ_Q"
+          id="Question2_show"
+          onclick="document.getElementById('Question2_show').style.display='none'; document.getElementById('Question2_hide').style.display='block'; document.getElementById('Q2').style.display='block'"
+        >
+          How do I use the metaumbrella app? &nbsp
+          <i class="fas fa-angle-down"></i>
+        </div>
+        <div
+          class="FAQ_Q"
+          style="display: none"
+          id="Question2_hide"
+          onclick="document.getElementById('Question2_show').style.display='block'; document.getElementById('Question2_hide').style.display='none'; document.getElementById('Q2').style.display='none'"
+        >
+          How do I use the metaumbrella app? &nbsp
+          <i class="fas fa-angle-up"></i>
+        </div>
+        <div class="FAQ_A" id="Q2">
+          To open the app, simply click on 'Try the app' button or click on
+          'App' section in the navigation bar. Once the app is open, you will be
+          able to load your dataset, automatically run the calculations and
+          select the rating criteria needed for your umbrella review.
+        </div>
+      </div>
+
+      <div class="FAQ_Q_A">
+        <div
+          class="FAQ_Q"
+          id="Question3_show"
+          onclick="document.getElementById('Question3_show').style.display='none'; document.getElementById('Question3_hide').style.display='block'; document.getElementById('Q3').style.display='block'"
+        >
+          What are the features of the metaumbrella app? &nbsp
+          <i class="fas fa-angle-down"></i>
+        </div>
+        <div
+          class="FAQ_Q"
+          style="display: none"
+          id="Question3_hide"
+          onclick="document.getElementById('Question3_show').style.display='block'; document.getElementById('Question3_hide').style.display='none'; document.getElementById('Q3').style.display='none'"
+        >
+          What are the features of the metaumbrella app? &nbsp
+          <i class="fas fa-angle-up"></i>
+        </div>
+        <div class="FAQ_A" id="Q3">
+          The core features that the app provide are to (i) automatically
+          perform all calculations required to conduct umbrella reviews
+          (including but not limited to meta-analyses), (ii) stratify evidence
+          according to various criteria, and (iii) generate a visual
+          representation of the results.
+        </div>
+      </div>
+
+      <div class="FAQ_Q_A">
+        <div
+          class="FAQ_Q"
+          id="Question4_show"
+          onclick="document.getElementById('Question4_show').style.display='none'; document.getElementById('Question4_hide').style.display='block'; document.getElementById('Q4').style.display='block'"
+        >
+          I do not understand how the metaumbrella app works! &nbsp
+          <i class="fas fa-angle-down"></i>
+        </div>
+        <div
+          class="FAQ_Q"
+          style="display: none"
+          id="Question4_hide"
+          onclick="document.getElementById('Question4_show').style.display='block'; document.getElementById('Question4_hide').style.display='none'; document.getElementById('Q4').style.display='none'"
+        >
+          I do not understand how the metaumbrella app works! &nbsp
+          <i class="fas fa-angle-up"></i>
+        </div>
+        <div class="FAQ_A" id="Q4">
+          To make getting started easier, the sections 'Tutorials' and
+          'Examples' provide general guidance on how using this app along with
+          examples.
+        </div>
+      </div>
+    </div>
+
+    <!----------------------tutorials area starts------------------------------->
+    <div class="intro_section tutorial_title" id="TUTORIAL_SECTION">
+      Tutorials
+    </div>
+    <div class="contain_row">
+      <div class="tutorials">
+        <a href="tutorial1.html">
+          <div class="title_tutorial">Tutorial 1.</div>
+          <hr class="hr" />
+          <div class="body_tutorial">Learn how to format your dataset</div>
+        </a>
+      </div>
+
+      <div class="tutorials">
+        <a href="tutorial2.html">
+          <div class="title_tutorial">Tutorial 2.</div>
+          <hr class="hr" />
+          <div class="body_tutorial">Load your dataset</div>
+        </a>
+      </div>
+
+      <div class="tutorials">
+        <a href="tutorial2.html">
+          <div class="title_tutorial">Tutorial 3.</div>
+          <hr class="hr" />
+          <div class="body_tutorial">Declare the structure of your data</div>
+        </a>
+      </div>
+
+      <div class="tutorials">
+        <a href="tutorial2.html">
+          <div class="title_tutorial">Tutorial 4.</div>
+          <hr class="hr" />
+          <div class="body_tutorial">Stratify the evidence</div>
+        </a>
+      </div>
+
+      <div class="tutorials">
+        <a href="tutorial2.html">
+          <div class="title_tutorial">Tutorial 5.</div>
+          <hr class="hr" />
+          <div class="body_tutorial">Interpret the results</div>
+        </a>
+      </div>
+    </div>
+
+    <!----------------------Examples area starts------------------------------->
+    <div class="intro_section tutorial_title" id="EXAMPLE_SECTION">
+      Examples
+    </div>
+    <div class="contain_row contain_row_examples">
+      <div class="examples">
+        <a href="tutorial1.html">
+          <div class="title_tutorial title_tut_1">Example 1.</div>
+          <hr class="hr hr1" />
+          <div class="body_tutorial">
+            <b>Odds ratio</b> as effect size measure and
+            <b>Ioannidis</b> classification for the stratification of the
+            evidence
+          </div>
+        </a>
+      </div>
+
+      <div class="examples">
+        <a href="tutorial1.html">
+          <div class="title_tutorial title_tut_1">Example 2.</div>
+          <hr class="hr hr1" />
+          <div class="body_tutorial">
+            <b>Odds ratio</b> as effect size measure and
+            <b>GRADE</b> classification for the stratification of the evidence
+          </div>
+        </a>
+      </div>
+
+      <div class="examples">
+        <a href="tutorial1.html">
+          <div class="title_tutorial title_tut_1">Example 3.</div>
+          <hr class="hr hr1" />
+          <div class="body_tutorial">
+            <b>Odds ratio</b> as effect size measure and
+            <b>Personalized</b> classification for the stratification of the
+            evidence
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!----------------------About area starts------------------------------->
+    <div class="intro_section team_title" id="ABOUT_SECTION">
+      Learn more about our team
+    </div>
+    <div class="about_us">
+      <div class="memb">
+        <img src="photo_gosling-resized.jpg" class="photo" />
+        <div class="memb_name">Corentin J. Gosling, PhD</div>
+        <div class="memb_affil">&nbsp</div>
+        <div class="memb_affil">University Paris Nanterre, France</div>
+        <div class="memb_affil">&nbsp</div>
+        <div
+          class="read_more"
+          id="readmore_cg"
+          onclick="document.getElementById('readmore_cg').style.display='none'; document.getElementById('readmore_cg_hide').style.display='block'; document.getElementById('read_more_text_cg').style.display='block'"
+        >
+          Read more &nbsp
+          <i class="fas fa-plus"></i>
+        </div>
+        <div
+          class="read_more_hide"
+          style="display: none"
+          id="readmore_cg_hide"
+          onclick="document.getElementById('readmore_cg').style.display='block'; document.getElementById('readmore_cg_hide').style.display='none'; document.getElementById('read_more_text_cg').style.display='none'"
+        >
+          Read more &nbsp
+          <i class="fas fa-minus"></i>
+        </div>
+        <div class="read_more_text" id="read_more_text_cg">
+          Dr. Corentin J. Gosling is an associate professor of neuropsychology
+          at Paris Nanterre University. His research interests focus on the
+          diagnosis and clinical interventions for individuals with
+          neurodevelopmental disorders.
+          <div class="read_more_icons">
+            <div class="icons">
+              <a href="mailto: corentin.gosling@parisnanterre.fr" class="button"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </div>
+            <div class="icons">
+              <a
+                href="https://github.com/CorentinJGosling"
+                class="button"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+            <div class="icons">
+              <a
+                href="https://www.parisnanterre.fr/corentin-gosling--929655.kjsp?RH=1519826463065"
+                target="_blank"
+                ><i class="fas fa-university"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="memb">
+        <img src="photo_solanes-resized.jpg" class="photo" />
+        <div class="memb_name">Aleix Solanes, PhD</div>
+        <div class="memb_affil">&nbsp</div>
+        <div class="memb_affil">Hospital Clinic de Barcelona, Spain</div>
+        <div class="memb_affil">&nbsp</div>
+        <div
+          class="read_more"
+          id="readmore_as"
+          onclick="document.getElementById('readmore_as').style.display='none'; document.getElementById('readmore_as_hide').style.display='block'; document.getElementById('read_more_text_as').style.display='block'"
+        >
+          Read more &nbsp
+          <i class="fas fa-plus"></i>
+        </div>
+        <div
+          class="read_more_hide"
+          style="display: none"
+          id="readmore_as_hide"
+          onclick="document.getElementById('readmore_as').style.display='block'; document.getElementById('readmore_as_hide').style.display='none'; document.getElementById('read_more_text_as').style.display='none'"
+        >
+          Read more &nbsp
+          <i class="fas fa-minus"></i>
+        </div>
+        <div class="read_more_text" id="read_more_text_as">
+          Dr. Aleix Solanes Font earned his PhD in Computer engineering in 2021
+          at the University of Barcelona. He has a lot of experience in applying
+          machine learning, deep learning and statistical techniques to
+          neuroimaging and clinical data. He is the programmer of several
+          softwares related to neuroimaging topics.
+          <div class="read_more_icons">
+            <div class="icons">
+              <a href="mailto: aal.solanes@gmail.com" class="button"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </div>
+            <div class="icons">
+              <a href="https://es.linkedin.com/in/aleixsolanes" target="_blank"
+                ><i class="fas fa-university"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="memb">
+        <img src="photo_fusarpoli-resized.jpg" class="photo" />
+        <div class="memb_name">Paolo Fusar-Poli, MD, PhD</div>
+        <div class="memb_affil">Kings' College London, UK</div>
+        <div class="memb_affil">South London & Maudsley NHS</div>
+        <div class="memb_affil">Foundation Trust, UK</div>
+        <div
+          class="read_more"
+          id="readmore_pfp"
+          onclick="document.getElementById('readmore_pfp').style.display='none'; document.getElementById('readmore_pfp_hide').style.display='block'; document.getElementById('read_more_text_pfp').style.display='block'"
+        >
+          Read more &nbsp
+          <i class="fas fa-plus"></i>
+        </div>
+        <div
+          class="read_more_hide"
+          style="display: none"
+          id="readmore_pfp_hide"
+          onclick="document.getElementById('readmore_pfp').style.display='block'; document.getElementById('readmore_pfp_hide').style.display='none'; document.getElementById('read_more_text_pfp').style.display='none'"
+        >
+          Read more &nbsp
+          <i class="fas fa-minus"></i>
+        </div>
+        <div class="read_more_text" id="read_more_text_pfp">
+          Dr. Paolo Fusar-Poli is a Professor of Preventive Psychiatry at King's
+          College London where he heads the EPIC Lab. He ranked as the number
+          two expert in psychosis in the world in 2019 according to expertscape
+          and he was an external advisory member for the DSM-5 and DSM-5TR
+          Psychosis Working Group, US.
+          <div class="read_more_icons">
+            <div class="icons">
+              <a href="mailto: Paolo.fusar-poli@kcl.ac.uk" class="button"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </div>
+            <div class="icons">
+              <a
+                href="https://www.kcl.ac.uk/people/paolo-fusar-poli"
+                class="button"
+                target="_blank"
+                ><i class="fas fa-university"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="memb">
+        <img src="photo_quim-resized.jpg" class="photo" />
+        <div class="memb_name">Joaquim Radua, MD, PhD</div>
+        <div class="memb_affil">Hospital Clinic de Barcelona, Spain</div>
+        <div class="memb_affil">King's College London, UK</div>
+        <div class="memb_affil">Karolinska Institutet, Sweden</div>
+        <div
+          class="read_more"
+          id="readmore_jr"
+          onclick="document.getElementById('readmore_jr').style.display='none'; document.getElementById('readmore_jr_hide').style.display='block'; document.getElementById('read_more_text_jr').style.display='block'"
+        >
+          Read more &nbsp
+          <i class="fas fa-plus"></i>
+        </div>
+        <div
+          class="read_more_hide"
+          style="display: none"
+          id="readmore_jr_hide"
+          onclick="document.getElementById('readmore_jr').style.display='block'; document.getElementById('readmore_jr_hide').style.display='none'; document.getElementById('read_more_text_jr').style.display='none'"
+        >
+          Read more &nbsp
+          <i class="fas fa-minus"></i>
+        </div>
+        <div class="read_more_text" id="read_more_text_jr">
+          Dr. Joaquim Radua is a psychiatrist medical doctor and statistician
+          interested in improving the treatment of psychiatric disorders. He is
+          the developer of numerous methods for meta-analysis of neuroimaging
+          studies and he has been named as one of the most cited researchers in
+          Psychiatry and Psychology.
+
+          <div class="read_more_icons">
+            <div class="icons">
+              <a href="mailto: quimradua@gmail.com" class="button"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </div>
+            <div class="icons">
+              <a href="https://www.radua.net/" class="button" target="_blank"
+                ><i class="fas fa-university"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----------------------FOOTER area starts------------------------------->
+
+    <footer class="footer">
+      <div class="footer_left">
+        <div class="footer_logo">metaumbrella</div>
+        <address>
+          <img src="https://img.shields.io/badge/license-GPL-red" /><br />
+          <img src="https://www.r-pkg.org/badges/version/metaumbrella" /><br />
+          <img src="https://cranlogs.r-pkg.org/badges/metaumbrella" /><br />
+          <img
+            src="https://cranlogs.r-pkg.org/badges/grand-total/metaumbrella"
+          /><br />
+          <button type="button" style="border: solid 1px #fff">
+            <a
+              href="mailto: corentin.gosling@parisnanterre.fr"
+              style="
+                text-decoration: none;
+                color: #000;
+                width: 100%;
+                height: 100%;
+                display: block;
+              "
+              >Contact us</a
+            >
+          </button>
+        </address>
+      </div>
+
+      <!-- <div class = "footer_nav"> -->
+      <div class="footer_mid">
+        <div class="p10">
+          <a
+            href="https://www.parisnanterre.fr/corentin-gosling"
+            target="_blank"
+            ><img src="p10.svg" class="img_univ"
+          /></a>
+        </div>
+        <div class="kcl">
+          <a
+            href="https://www.kcl.ac.uk/people/paolo-fusar-poli"
+            target="_blank"
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/commons/1/18/King%E2%80%99s_College_London_logo.png"
+              class="img_univ"
+          /></a>
+        </div>
+        <!-- </div>
+          <div class = "footer_right"> -->
+        <div class="barc">
+          <a
+            href="https://www.clinicbarcelona.org/en/professionals/joaquim-radua"
+            target="_blank"
+            ><img src="barcelona.jpg" class="img_univ"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <!-- </div> -->
+  </body>
+</html>
