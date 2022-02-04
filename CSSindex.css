@@ -541,6 +541,7 @@ button:hover {
   background: #fff;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  display: none;
 }
 .p10 a {
   padding-top: 3rem;
@@ -548,12 +549,11 @@ button:hover {
 }
 .kcl {
   border-radius: 2px;
+  display: none;
 }
 .barc {
   border-radius: 2px;
-}
-.southampton {
-  width: 200px;
+  display: none;
 }
 
 /* ---------------------------- RESPONSIVENESS -------------------------- */
