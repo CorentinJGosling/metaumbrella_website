@@ -489,8 +489,11 @@ hr {
   grid-template-columns: 25% 75%;
   align-items: center;
   color: #fff;
-  padding-left: 3rem;
   font-size: 0.8em;
+}
+
+.footer_left {
+  padding-left: 3rem;
 }
 
 .footer_logo {
@@ -827,6 +830,9 @@ button:hover {
   .img_univ {
     width: 150px;
   }
+  .footer_left {
+    padding-left: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -905,6 +911,10 @@ button:hover {
     margin-left: 0.5rem;
   }
 
+  .memb {
+    padding-bottom: 1rem;
+  }
+
   .footer_mid {
     display: flex;
     flex-direction: column;
@@ -920,5 +930,8 @@ button:hover {
     background: #fff;
     margin-bottom: 1rem;
     width: 150px;
+  }
+  .footer_left {
+    padding-left: 0.5rem;
   }
 }
